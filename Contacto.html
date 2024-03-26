@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Asset/Img/LoL.ico">
+    <title>Contacto de invocador</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<header>
+    <h1>League Of Legends Perfil</h1>
+    <nav>
+        <ul>
+            <li><a href="Lol.html">Home</a></li>
+            <li><a href="Mains.html">Mains</a></li>
+            <li><a href="Pentakills.html">Pentakills</a></li>
+            <li><a class="active" href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<h2 style="margin: 15px;">Contacto para crear grupos</h2>
+<body>
+    <div class="contenedor-formulario">
+        <form>
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" name="username" id="username" placeholder="Escriba el usuario y tag" required>
+            <label for="correo">Digite su email</label>
+            <input type="email" name="correo" id="correo" placeholder="Digite su email" required>
+            <label for="Discord">Usuario de discord:</label>
+            <input type="text" name="Discord" id="Discord" placeholder="Usuario de Discord" required> <br>
+            <label for="checkbox">Posicion principal y segundaria</label>
+            <input type="checkbox" id="Posicion" name="Posicion" value="Top">Top
+            <input type="checkbox" id="Posicion" name="Posicion" value="Jg">Jg
+            <input type="checkbox" id="Posicion" name="Posicion" value="Mid">Mid
+            <input type="checkbox" id="Posicion" name="Posicion" value="Adc">Adc
+            <input type="checkbox" id="Posicion" name="Posicion" value="Sup">Sup
+            <br>
+            <label for="ratio">Posicion principal y segundaria</label>
+            <input type="radio" id="playMode" name="playMode" value="Aram">Aram
+            <input type="radio" id="playMode" name="playMode" value="Normales">Normales
+            <input type="radio" id="playMode" name="playMode" value="SoloQ">SoloQ
+            <input type="radio" id="playMode" name="playMode" value="Flex">Flex
+            <input type="radio" id="playMode" name="playMode" value="TFT">TFT
+            <label for="Elo">Elija su Elo:</label>
+            <select name="Elo" id="Elo">
+                <option value="unranked">Unranked</option>
+                <optgroup label="Low Elo">
+                    <option value="Hierro">Hierro</option>
+                    <option value="Bronce">Bronce</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Oro">Oro</option>
+                    <option value="Platino">Platino</option>
+                    <option value="Esmeralda">Esmeralda</option>
+                </optgroup>
+                <optgroup label="High Elo">
+                    <option value="Diamante">Diamante</option>
+                    <option value="Maestro">Maestro</option>
+                    <option value="Gran Maestro">Gran Maestro</option>
+                    <option value="Retador">Retador</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="Comentario" id="Comentario"placeholder="Escribe tu comentario"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+    <br>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

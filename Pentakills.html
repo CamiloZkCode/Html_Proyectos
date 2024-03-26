@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Asset/Img/LoL.ico">
+    <title>Pentakills</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        li audio.container {
+            display: flex;
+            float: right;
+        }
+
+        audio {
+            width: 200px;
+            height: 40px;
+            transform: translateX(750px);
+            margin: 2px;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery video {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<header>
+    <h1>League Of Legends Perfil</h1>
+    <nav>
+        <ul>
+            <li><a href="Lol.html">Home</a></li>
+            <li><a href="Mains.html">Mains</a></li>
+            <li><a class="active" href="Pentakills.html">Pentakills</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li class="audio-container"> <audio src="Asset/Audio/sountrack.mp3" controls></audio></li>
+        </ul>
+    </nav>
+</header>
+<br>
+
+<body>
+    <h2 style="margin: 15px;">Algunas Pentakills</h2>
+    <hr>
+
+    <section class="centrado">
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/PentaYone.mp4" controls width="400px"></video>
+            <div class="desc">Penta con Yone</div>
+        </div>
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/PentaEvelyn.mp4" controls width="400px"></video>
+            <div class="desc">Penta con Evelyn</div>
+        </div>
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/PentaEvelyn.mp4" controls width="400px"></video>
+            <div class="desc"> Penta con Vayne</div>
+        </div>
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/PentaLillia.mp4" controls width="400px"></video>
+            <div class="desc"> Penta con Lillia</div>
+        </div>
+    </section>
+    <br>
+    <section class="centrado">
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/PentaCamille.webm" controls width="400px"></video>
+            <div class="desc">Penta con Camille</div>
+        </div>
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/PentaJinx.webm" controls width="400px"></video>
+            <div class="desc">Penta con Jinx</div>
+        </div>
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/SamiraPenta.webm" controls width="400px"></video>
+            <div class="desc"> Penta con Samira</div>
+        </div>
+        <div class="gallery">
+            <video class="centrado" src="Asset/Videos/Penta jax.webm" controls width="400px"></video>
+            <div class="desc"> Penta con Jax</div>
+        </div>
+
+    </section>
+    <br>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024 </p>
+    </footer>
+</body>
+
+
+</html>
